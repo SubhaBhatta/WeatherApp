@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function About() {
   const features = [
@@ -158,14 +159,12 @@ export default function About() {
             interface
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/">
-              <button
-                onClick={"./Home.jsx"}
-                className="bg-white text-blue-600 px-8 py-3 rounded-xl font-bold hover:bg-blue-50 transition-colors duration-300 transform hover:scale-105"
-              >
+            <Link to="/">
+              <button className="bg-white text-blue-600 px-8 py-3 rounded-xl font-bold hover:bg-blue-50 transition-colors duration-300 transform hover:scale-105">
                 🌤️ Try WeatherApp Now
               </button>
-            </a>
+            </Link>
+
             <a
               href="https://github.com/SubhaBhatta/WeatherApp"
               target="_blank"
